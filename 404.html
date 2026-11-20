@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Закрытая страница</title>
+<script>
+// Прямая ссылка внутрь книги без пароля: вернуть на страницу входа (корень этого сайта).
+// Корень сайта: всё до /book/; иначе на *.github.io — первый каталог пути, на своём домене — «/».
+(function(){var p=location.pathname,i=p.indexOf('/book/'),
+root=i>=0?p.slice(0,i+1):/\.github\.io$/.test(location.hostname)?'/'+p.split('/')[1]+'/':'/';
+if(root!==p)location.replace(root+location.hash);})();
+</script></head><body style="background:#14130f;color:#efe9dc;font:16px system-ui,sans-serif;padding:24px">Такой страницы нет. <a href="./" style="color:#d9b36a">На страницу входа</a></body></html>
